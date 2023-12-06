@@ -5,11 +5,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="qq-botpy",
-    version=os.getenv("VERSION_NAME"),
+    version="1.1.2",
     author="easonchen",
     author_email="1392869969@qq.com",
     description="qq robot client with python3 rebuild by easonchen",
-    long_description=open("README.rst").read(),
+    long_description=open("README.rst",encoding='UTF-8').read(),
     # 项目主页
     url="https://github.com/cyx200902/eason-botpy",
     # 你要安装的包，通过 setuptools.find_packages 找到当前目录下有哪些包

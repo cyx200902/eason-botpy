@@ -49,6 +49,8 @@ class BotWebSocket:
     async def on_error(self, exception: BaseException):
         _log.error("[botpy] websocket连接: %s, 异常信息 : %s" % (self._conn, exception))
         traceback.print_exc()
+        # 防止机器人老是寄
+        self._connection.add(self._session)
 
     async def on_closed(self, close_status_code, close_msg):
         _log.info("[botpy] 关闭, 返回码: %s" % close_status_code + ", 返回信息: %s" % close_msg)

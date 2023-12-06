@@ -6,16 +6,16 @@ from setuptools import setup, find_packages
 setup(
     name="qq-botpy",
     version=os.getenv("VERSION_NAME"),
-    author="veehou",
-    author_email="veehou@tencent.com",
-    description="qq robot client with python3",
+    author="easonchen",
+    author_email="1392869969@qq.com",
+    description="qq robot client with python3 rebuild by easonchen",
     long_description=open("README.rst").read(),
     # 项目主页
-    url="https://github.com/tencent-connect/botpy",
+    url="https://github.com/cyx200902/eason-botpy",
     # 你要安装的包，通过 setuptools.find_packages 找到当前目录下有哪些包
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     # 执照
-    license="Tencent",
+    license="Eason",
     # 安装依赖
     install_requires=["aiohttp>=3.7.4,<4", "PyYAML", "APScheduler"],
     # 分类

@@ -28,7 +28,9 @@ _✨ 为开发者提供一个易使用、开发效率高的开发框架 ✨_
 ### 安装
 
 ```bash
-pip install qq-botpy
+git clone https://github.com/cyx200902/eason-botpy
+cd .\eason-botpy\
+pip install .
 ```
 
 更新包的话需要添加 `--upgrade` `兼容版本：python3.8+`

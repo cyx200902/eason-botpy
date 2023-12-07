@@ -248,7 +248,7 @@ class BotAPI:
         )
         return await self._http.request(route, params=params)
     
-        async def get_guild_role_members(
+    async def get_guild_role_members(
             self, guild_id: str, role_id: str, start_index: str = "0", limit: int = 1
     ) -> Dict[str, Union[List[user.Member], str]]:
         """
